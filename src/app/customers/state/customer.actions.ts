@@ -2,23 +2,23 @@ import { Action } from '@ngrx/store'
 import { Customer } from '../customer.model';
 
 export enum CustomerActionTypes {
-  LOAD_CUSTOMER = '[Customer] Load Customers',
+  LOAD_CUSTOMERS = '[Customer] Load Customers',
   LOAD_CUSTOMER_SUCCESS = '[Customer] Load Customers Success',
   LOAD_CUSTOMER_FAIL = '[Customer] Load Customers Fail'
  }
 
- export class LoadCustomer implements Action {
-   readonly type = CustomerActionTypes.LOAD_CUSTOMER;
+ export class LoadCustomers implements Action {
+   readonly type = CustomerActionTypes.LOAD_CUSTOMERS;
  }
 
- export class LoadCustomerSuccess implements Action {
+ export class LoadCustomersSuccess implements Action {
    readonly type = CustomerActionTypes.LOAD_CUSTOMER_SUCCESS;
    constructor(public payload: Customer[]) {}
  }
 
- export class LoadCustomerFail implements Action {
+ export class LoadCustomersFail implements Action {
    readonly type = CustomerActionTypes.LOAD_CUSTOMER_FAIL;
    constructor(public payload: string) {}
  }
 
- export type Actions = LoadCustomer | LoadCustomerSuccess | LoadCustomerFail;
+ export type Actions = LoadCustomers | LoadCustomersSuccess | LoadCustomersFail;
