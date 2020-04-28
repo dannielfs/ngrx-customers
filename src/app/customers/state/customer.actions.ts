@@ -1,4 +1,4 @@
-import { Action } from '@ngrx//store';
+import { Action } from '@ngrx/store'
 import { Customer } from '../customer.model';
 
 export enum CustomerActionTypes {
@@ -13,7 +13,7 @@ export enum CustomerActionTypes {
 
  export class LoadCustomerSuccess implements Action {
    readonly type = CustomerActionTypes.LOAD_CUSTOMER_SUCCESS;
-   constructor(public payload: { customers: Customer[]}) {}
+   constructor(public payload: Customer[]) {}
  }
 
  export class LoadCustomerFail implements Action {
@@ -21,4 +21,4 @@ export enum CustomerActionTypes {
    constructor(public payload: string) {}
  }
 
- export type Action = LoadCustomer | LoadCustomerSuccess | LoadCustomerFail;
+ export type Actions = LoadCustomer | LoadCustomerSuccess | LoadCustomerFail;
