@@ -1,0 +1,18 @@
+{
+  "customers": [
+    {
+      "name": "John Doe",
+      "phone": "34 991498881",
+      "address": "alfredo julio 123",
+      "membership": "Platinum",
+      "id": 1
+    },
+    {
+      "name": "Dan Sou",
+      "phone": "34 88789981",
+      "address": "Rua das pqp 123",
+      "membership": "Gold",
+      "id": 2
+    }
+  ]
+}
