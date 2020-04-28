@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule }  from '@ngrx/store-devtools';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
@@ -18,6 +19,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserModule,
     RouterModule,
     StoreModule.forRoot({}),
+    StoreDevtoolsModule.instrument(),
     AppRoutingModule,
   ],
   providers: [],
