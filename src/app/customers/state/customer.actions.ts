@@ -85,7 +85,7 @@ export class UpdateCustomerSuccess implements Action {
 }
 
 export class UpdateCustomerFail implements Action {
-  readonly type = CustomerActionTypes.CREATE_CUSTOMER_FAIL;
+  readonly type = CustomerActionTypes.UPDATE_CUSTOMER_FAIL;
   constructor(public payload: string) {}
 }
 

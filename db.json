@@ -10,9 +10,16 @@
     {
       "name": "Dan Sou",
       "phone": "34 88789981",
-      "address": "Rua das pqp 123",
-      "membership": "Gold",
+      "address": "Rua das pqp 123 345",
+      "membership": "Basic",
       "id": 2
+    },
+    {
+      "name": "danniel",
+      "phone": "3433253939",
+      "address": "rua das flores",
+      "membership": "Platinum",
+      "id": 3
     }
   ]
 }
